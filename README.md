@@ -31,7 +31,8 @@ However, SMD capacitors do not present the same behavior. According to [Mr. Eric
 
 Note above that the combination of 0805 capacitors **does not change the inductive characteristic** of the set: using only one of these 0805 capacitors the curve in the **inductive region** would remain unchanged. In the figure to the side, associating capacitors of different sizes - 0805, 0603 and 0402 - we obtain a resulting inductive characteristic that covers a larger frequency band, shown in yellow.
 
-[Nesse vídeo](https://youtu.be/icAZlvpiJCo?t=2463), note the recommendation to place the vias between the pads and the decoupling capacitor in the case of a 4-layer-board.
+[in this video](https://youtu.be/icAZlvpiJCo?t=2463), note the recommendation to place the vias between the pads and the decoupling capacitor in the case of a 4-layer-board.
+
 |!["Capacitor Placing"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Capacitor%20placing.JPG)|
 |:--:|
 | *Fig. 1: Capacitor placing* |
@@ -41,13 +42,13 @@ see LDO: https://www.analog.com/en/analog-dialogue/articles/understand-ldo-conce
 
 see BEAD FERRITE: https://www.analog.com/en/analog-dialogue/articles/ferrite-beads-demystified.html#:~:text=A%20ferrite%20bead%20is%20a,in%20the%20form%20of%20heat.&text=This%20forms%20a%20low%2Dpass,high%20frequency%20power%20supply%20noise.
 
-see Power Supply Noise Rejection : https://www.idt.com/br/en/document/apn/806-power-supply-noise-rejection
+see about Power Supply Noise Rejection : https://www.idt.com/br/en/document/apn/806-power-supply-noise-rejection
 
-see PASSIVE FILTERS: https://blog.mbedded.ninja/electronics/circuit-design/filters/passive-filters/
+see about Passive Filters: https://blog.mbedded.ninja/electronics/circuit-design/filters/passive-filters/
 
-see Filter Technique: https://www.ti.com/lit/an/scaa048/scaa048.pdf?ts=1596749179778&ref_url=https%253A%252F%252Fwww.google.com%252F
+see about Filters Technique: https://www.ti.com/lit/an/scaa048/scaa048.pdf?ts=1596749179778&ref_url=https%253A%252F%252Fwww.google.com%252F
 
-see [essa série de 4 artigos sobre Bulk Capacitors para ponte H com cálculos](https://www.embeddedrelated.com/showarticle/588.php)
+see about Bulk Capacitors: https://www.embeddedrelated.com/showarticle/588.php
 
 ## 1.3.2 DRV8353S
 ### 1.3.2.1 BULK CAPACITOR
