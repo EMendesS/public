@@ -3,10 +3,10 @@ Dedicated to show some projects made by me.
 
 # 1. Tupan Project
 
-|!["ESP32 Inicialização"](https://github.com/EMendesS/Tupan/blob/TupanV3/Images/Board_preview.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/main/img/tupanV4/Board_preview.jpg)|
 |:--:|
 | *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/Tupan/blob/TupanV3/Images/Board_preview_bottom.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/main/img/tupanV4/Board_preview_bottom.jpg)|
 | *Fig. 2: Bottom preview* |
 
 # 1.1 DESCRIPTION
@@ -25,7 +25,7 @@ This video [Crosstalk Explained by Eric Bogatin](https://www.youtube.com/watch?v
 It is important to note in this topic a current discussion: why place capacitors in parallel. In order to reduce the inductive characteristic of the PTH capacitor combination, for example, large, medium and small capacitors are used in parallel - Ex.: 10uF, 1uF and 0.10uF (to choose the decoupling capacitor, [see the calculation in the video](https://youtu.be/y4REmZlE7Jg?t=827)).
 For PTH capacitors, higher capacitance values ​​indicate a larger inductive loop, since the physical construction of each type of capacitor in this combination implies a different behavior in relation to high frequencies.
 However, SMD capacitors do not present the same behavior. According to [Mr. Eric Bogatin](https://www.colorado.edu/faculty/bogatin/) in this video: ["You must Unlearn what You have Learned"](https://youtu.be/y4REmZlE7Jg?t=1917), for SMD capacitors of the same size, for example 0603, each of them will present the same reactivity value at a given frequency, regardless of the capacitance value. Therefore, associating 3 0603 capacitors of different values ​​is not necessary, although the association of only 2 of them will both increase the total capacitance and decrease the inductive loop. Observe the figure below taken [from this article](https://www.slideshare.net/genarova/capacitores-35235005): 
-|!["Capacitor Association"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Capacitor_association.JPG)|
+|!["Capacitor Association"](https://github.com/EMendesS/main/img/tupanV4/Capacitor_association.JPG)|
 |:--:|
 | *Fig. 1: Capacitor Association* |
 
@@ -33,7 +33,7 @@ Note above that the combination of 0805 capacitors **does not change the inducti
 
 [in this video](https://youtu.be/icAZlvpiJCo?t=2463), note the recommendation to place the vias between the pads and the decoupling capacitor in the case of a 4-layer-board.
 
-|!["Capacitor Placing"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Capacitor%20placing.JPG)|
+|!["Capacitor Placing"](https://github.com/EMendesS/main/img/tupanV4/Capacitor%20placing.JPG)|
 |:--:|
 | *Fig. 1: Capacitor placing* |
 
@@ -55,11 +55,11 @@ see about Bulk Capacitors: https://www.embeddedrelated.com/showarticle/588.php
 The images below compare the system performance without any and then with 6x10uF bulk capacitors.
 A 29.86kHz pulse at 25% duty cycle was used on the INHA pin.
 Note the reduction in the ringing level at the **low level** and the horizontalization of the **high level**, after the addition of the bulk capacitors.
-|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/TupanV4/Images/DRV8353%20OSC%20IMG/scope_64.png)|
+|!["Capacitor Placing"](https://github.com/EMendesS/main/img/tupanV4/scope_64.png)|
 |:--:|
 | *Fig. 1: No bulk capacitors added* |
 
-|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/TupanV4/Images/DRV8353%20OSC%20IMG/scope_66.png)|
+|!["Capacitor Placing"](https://github.com/EMendesS/main/img/tupanV4/scope_66.png)|
 |:--:|
 | *Fig. 1: With 6x10uF bulk capacitors added* |
 
@@ -70,14 +70,14 @@ Note that during the switching time, the operation occurs with some peculiar beh
 * Region 2 - When the difference between GHA and SHA reaches Vgs(th), the FET is switched on and consequently SHA goes to VM level, which explains the slightly lower level on SHA, when compared to SHA in Region 1. 
 
 
-| <img src="https://github.com/EMendesS/Tupan/blob/main/Images/DRV8353%20OSC%20IMG/switching_1.png" width="450" height="280"> |
+| <img src="https://github.com/EMendesS/main/img/tupanV4/switching_1.png" width="450" height="280"> |
 |:--:|
 | *Fig 1 - Files to exclude* |
 
 ## 1.3.3 USB-C DESIGN
 The use of type A and B connectors is becoming increasingly scarce. The industry is migrating to USB-C, following the trend of using this new technology. [Here](https://www.beyondlogic.org/usbnutshell/usb2.shtml) we see a compilation of important information about USB technology, in general, to introduce ideas on the subject. ([reference.](https://dubiouscreations.com/2021/04/06/designing-with-usb-c-lessons-learned/))
 
-([USB-C connector datasheet](https://github.com/EMendesS/Tupan/blob/TupanV3/Documents/datasheets/Global_Connector_Technology_usb4105-3106202.pdf))
+([USB-C connector datasheet](https://github.com/EMendesS/main/img/tupanV4/Global_Connector_Technology_usb4105-3106202.pdf))
 
 ### 1.3.3.1 CHOICE OF RESISTORS
 In the document [USB Type-C Specs](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf), at 2.5 Vconn, on page 36, it reads:
@@ -171,30 +171,30 @@ The [ESP32 Technical Reference Manual](https://www.espressif.com/sites/default/f
 
 ### 1.3.4.1 COMUNICAÇÃO SPI
 Note the figure below, with the spatial arrangement of the pins corresponding to the SPI communication available on the chip:
-|!["SPI Pins"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/SPI_ORG_ESP32.png)|
+|!["SPI Pins"](https://github.com/EMendesS/main/img/tupanV4/SPI_ORG_ESP32.png)|
 |:--:|
 | *Fig. 1: SPI Pins* |
 
 According to the [Datasheet](https://www.mouser.ca/datasheet/2/891/esp32_datasheet_en-1223853.pdf), the chip supports QSPI, which was used for protocol communication with the external FLASH memory, as shown in the image below:
-|!["FLASH Pinout"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/SPI%20Flash.JPG)|
+|!["FLASH Pinout"](https://github.com/EMendesS/main/img/tupanV4/SPI%20Flash.JPG)|
 |:--:|
 | *Fig. 1: FLASH SPI Conection* |
 
 
 According to [AN4760 - Quad-SPI interface on STM32 microcontrollers and microprocessors](https://www.st.com/resource/en/application_note/dm00227538-quadspi-interface-on-stm32-microcontrollers-and-microprocessors-stmicroelectronics.pdf) the STM32F405RG processor is not included in Table 1 of this document, as it does not support QSPI communication. Therefore, the physical connection of the SPI bus between the STM32 and the ESP32 was established following the pinout table below:
-|!["Pinout ESP32"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Pinout%20ESP32.JPG)|
+|!["Pinout ESP32"](https://github.com/EMendesS/main/img/tupanV4/Pinout%20ESP32.JPG)|
 |:--:|
 | *Fig. 1: ESP32 SPI Pinout* |
 
 Consecutively, the pattern as shown in the image below was used:
 
-|!["dominating_sets_example2"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Tabela%2027%20ESP32%20Technical%20Reference%20Manual.JPG)|
+|!["dominating_sets_example2"](https://github.com/EMendesS/main/img/tupanV4/Tabela%2027%20ESP32%20Technical%20Reference%20Manual.JPG)|
 |:--:|
 | *Fig. 2: ESP32 SPI Types and Correspondences* |
 
 ### 1.3.4.2 INICIALIZATION
 When starting the ESP32 chip, a certain state must be guaranteed for the pins in the figure below, taken from the datasheet:
-|!["ESP32 Inicialização"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/ESP32%20Strapping%20Pins.JPG)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/main/img/tupanV4/ESP32%20Strapping%20Pins.JPG)|
 |:--:|
 | *Fig. 2: ESP32 Initialization Pins* |
 
@@ -204,26 +204,26 @@ A [Pro-Ob-440](https://datasheet.octopart.com/PRO-OB-440-Proant-AB-datasheet-138
 ## 1.3.5 STM32F405RG
 ### 1.3.5.1 SPI COMMUNICATION
 In order to simplify the design, it is important to know the processor hardware and highlight the SPI communication pins, as in the figure below:
-|!["STM32 SPI Organization"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/SPI%20Org.JPG)|
+|!["STM32 SPI Organization"](https://github.com/EMendesS/main/img/tupanV4/SPI%20Org.JPG)|
 |:--:|
 | *Fig. 2: STM32 SPI Organization* |
 
 ### 1.3.5.2 I2C COMMUNICATION
 I2C communication is done through a clock line (SCL) and a single data line (SDA), which only allows sending information in the _HALF-DUPLEX_ configuration, unlike the SPI and UART protocols. However, one of the advantages of the I2C protocol is the possibility of using several chips "hanging" on the bus, so that data collisions do not imply electrical conflict, since the implementation of the I2C communication block consists of transistors in _OPEN DRAIN_ mode, as shown in the schematic below:
 
-|!["I2C Block"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Esquema%20I2C.JPG)|
+|!["I2C Block"](https://github.com/EMendesS/main/img/tupanV4/Esquema%20I2C.JPG)|
 |:--:|
 | *Fig. 2: I2C Block* |
 
 In order to simplify the design, it is important to know the processor hardware and highlight the I2C communication pins, as in the figure below: 
-|!["STM32 I2C Organization"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/LQFP64%20I2C%20Pins.png)|
+|!["STM32 I2C Organization"](https://github.com/EMendesS/main/img/tupanV4/LQFP64%20I2C%20Pins.png)|
 |:--:|
 | *Fig. 2: STM32 I2C Organization* |
 
 ### 1.3.5.3 BOOT
 There are 3 Boot modes:
 
-|!["Boot Modes"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Boot%20Table.JPG)|
+|!["Boot Modes"](https://github.com/EMendesS/main/img/tupanV4/Boot%20Table.JPG)|
 |:--:|
 | *Fig. 1: Boot Modes* |
 
@@ -275,7 +275,7 @@ see [OpAmp Filter Design: Do's and Don'ts](http://iowahills.com/A6OpAmpFilterHel
 ## 1.3.7 SX1276 LoRa Module
 ### 1.3.7.1 RF Design
 In this article [Using Via Fences for Crosstalk Reduction in PCB
-Circuits](https://github.com/EMendesS/Tupan/blob/TupanV2/Bibliography/Using%20via%20fences%20for%20crosstalk%20reduction%20in%20PCB%20circuits.pdf) the study shows how the via fencing is effective to couple with the microstrip, considering trace width, via diameter etc. From this article, the images below show the relation between via configurations and S parameters, where signal is applied to P1 and collected from P2 terminal:   
+Circuits](https://github.com/EMendesS/main/img/tupanV4/Using%20via%20fences%20for%20crosstalk%20reduction%20in%20PCB%20circuits.pdf) the study shows how the via fencing is effective to couple with the microstrip, considering trace width, via diameter etc. From this article, the images below show the relation between via configurations and S parameters, where signal is applied to P1 and collected from P2 terminal:   
 
 For 3 vias case, consider the distance of adjacent vias equal 23mm. Executing the same calculations from above, a via spacing a=23mm leads to fr = 3.54GHz, depicted in the figure b). In addition, for the 3-via case, the resonances (minima in S21 signature) become weaker as the line spacing increases, but for the 12-via case, the spacing does not affect the magnitudes of S21 significantly other than a small ripple in the insertion loss when S = 0.5mm;
 
@@ -283,18 +283,18 @@ This comparison is made from D/Wt = 0.169, 0.339, 0.677, and 0.847, where Wt is 
 lower frequencies, as D/Wt decreases. Also, a wider resonance is also observed when via diameter (D) is much smaller than the via fence width (Wt).
 
 For the same study, now consider two microstrips, one active and the other a victim, to whom _S_ parameters are valid, as shown below:
-|!["Microstrip"](https://github.com/EMendesS/Tupan/blob/TupanV2/Images/microstrip_via_study4.png)|
+|!["Microstrip"](https://github.com/EMendesS/main/img/tupanV4/microstrip_via_study4.png)|
 |:--:|
 | *Fig. 2: TIMERs* |
 
 Some times few vias between two microstrips can improve signal integrity, compered to a no-via fencing, as shown below:
-|!["Microstrip"](https://github.com/EMendesS/Tupan/blob/TupanV2/Images/microstrip_via_study5.png)|
+|!["Microstrip"](https://github.com/EMendesS/main/img/tupanV4/microstrip_via_study5.png)|
 |:--:|
 | *Fig. 2: TIMERs* |
 
 ***
 # 1.4 PINOUT
-|!["TIMERs"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Timer%20Pins.jpg)|
+|!["TIMERs"](https://github.com/EMendesS/main/img/tupanV4/Timer%20Pins.jpg)|
 |:--:|
 | *Fig. 2: TIMERs* |
 
