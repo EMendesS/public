@@ -55,11 +55,11 @@ see about Bulk Capacitors: https://www.embeddedrelated.com/showarticle/588.php
 The images below compare the system performance without any and then with 6x10uF bulk capacitors.
 A 29.86kHz pulse at 25% duty cycle was used on the INHA pin.
 Note the reduction in the ringing level at the **low level** and the horizontalization of the **high level**, after the addition of the bulk capacitors.
-|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/main/Images/DRV8353%20OSC%20IMG/scope_64.png)|
+|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/TupanV4/Images/DRV8353%20OSC%20IMG/scope_64.png)|
 |:--:|
 | *Fig. 1: No bulk capacitors added* |
 
-|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/main/Images/DRV8353%20OSC%20IMG/scope_66.png)|
+|!["Capacitor Placing"](https://github.com/EMendesS/Tupan/blob/TupanV4/Images/DRV8353%20OSC%20IMG/scope_66.png)|
 |:--:|
 | *Fig. 1: With 6x10uF bulk capacitors added* |
 
