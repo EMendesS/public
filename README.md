@@ -170,7 +170,7 @@ In order to eliminate noise, a _COMMON MODE CHOKE_ type inductor was chosen, exp
 The [ESP32 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf) provides detailed information about the chip's operation and also important data for configuring the hardware, in addition to its [Datasheet](https://www.mouser.ca/datasheet/2/891/esp32_datasheet_en-1223853.pdf). The design features chosen from the manufacturer's data will be discussed below.
 
 ### 1.3.4.1 COMUNICAÇÃO SPI
-Observe the figure below, with the spatial arrangement of the pins corresponding to the SPI communication available on the chip:
+Note the figure below, with the spatial arrangement of the pins corresponding to the SPI communication available on the chip:
 |!["SPI Pins"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/SPI_ORG_ESP32.png)|
 |:--:|
 | *Fig. 1: SPI Pins* |
@@ -193,29 +193,29 @@ Consecutively, the pattern as shown in the image below was used:
 | *Fig. 2: ESP32 SPI Types and Correspondences* |
 
 ### 1.3.4.2 INICIALIZATION
-Na inicialização do chip ESP32 deve-se garantir um determinado estado para os pinos da figura abaixo, retirada do datasheet:
+When starting the ESP32 chip, a certain state must be guaranteed for the pins in the figure below, taken from the datasheet:
 |!["ESP32 Inicialização"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/ESP32%20Strapping%20Pins.JPG)|
 |:--:|
 | *Fig. 2: ESP32 Initialization Pins* |
 
-### 1.3.4.3 COMUNICAÇÃO RÁDIO
+### 1.3.4.3 RADIO COMMUNICATION
 A [Pro-Ob-440](https://datasheet.octopart.com/PRO-OB-440-Proant-AB-datasheet-138897411.pdf) type antenna and a [MHF3 connector](https://www.mouser.ca/datasheet/2/398/RECE_20369_001E_01-2005142.pdf) were used in the 2.4GHz transmission line in order to tune/check the wave propagation ([here](http://www.wellshow.com/products/mini-coax-connector/ipex-connector/) there is a compatibility table and the types of IPX connectors).
 
 ## 1.3.5 STM32F405RG
-### 1.3.5.1 COMUNICAÇÃO SPI
+### 1.3.5.1 SPI COMMUNICATION
 In order to simplify the design, it is important to know the processor hardware and highlight the SPI communication pins, as in the figure below:
 |!["STM32 SPI Organization"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/SPI%20Org.JPG)|
 |:--:|
 | *Fig. 2: STM32 SPI Organization* |
 
-### 1.3.5.2 COMUNICAÇÃO I2C
+### 1.3.5.2 I2C COMMUNICATION
 I2C communication is done through a clock line (SCL) and a single data line (SDA), which only allows sending information in the _HALF-DUPLEX_ configuration, unlike the SPI and UART protocols. However, one of the advantages of the I2C protocol is the possibility of using several chips "hanging" on the bus, so that data collisions do not imply electrical conflict, since the implementation of the I2C communication block consists of transistors in _OPEN DRAIN_ mode, as shown in the schematic below:
 
 |!["I2C Block"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/Esquema%20I2C.JPG)|
 |:--:|
 | *Fig. 2: I2C Block* |
 
-A fim de simplificar o design, é importante conhecer o hardware do processador e evidenciar os pinos de comunicação I2C, como na figura abaixo: 
+In order to simplify the design, it is important to know the processor hardware and highlight the I2C communication pins, as in the figure below: 
 |!["STM32 I2C Organization"](https://github.com/EMendesS/Morpheus-V9/blob/MorpheusV9/Images/LQFP64%20I2C%20Pins.png)|
 |:--:|
 | *Fig. 2: STM32 I2C Organization* |
@@ -238,7 +238,7 @@ The _SRAM_ has 3 divisions, of which _SRAM1_ and _SRAM2_ are accessed by all AHB
 _Obs.: When the device boots from SRAM, in the application initialization code, you have to
 relocate the vector table in SRAM using the NVIC exception table and the offset register._
  
-### 1.3.5.4 BOOTLOADER EMBARCADO
+### 1.3.5.4 BOOTLOADER
 The Bootloader is written to System Memory by the manufacturer during production. It is used to reprogram the _FLASH_ memory from the below interfaces according to [RM0090](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf):
 
 • USART1 (PA9/PA10)
