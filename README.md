@@ -302,21 +302,37 @@ Some times few vias between two microstrips can improve signal integrity, comper
 
 # 1.9 REFERENCES
 [1] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [2] https://resource.heltec.cn/download/WiFi_LoRa_32/V2/WiFi_LoRa_32_V2(433%2C470-510).PDF
+
 [3] https://www.murata.com/en-us/products/emc/emifil/library/knowhow/basic/chapter01-p1
+
 [4] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [5] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [6] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [7] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [8] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [9] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [10] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [11] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [12] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [13] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [14] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [15] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [16] https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines
+
 [17] https://www.digipart.com/
 
 ***
