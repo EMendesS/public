@@ -18,7 +18,7 @@ The focus is on building robust, production-grade systems with clear architectur
 ## Featured Projects
 
 ### 🔥 Breflow – Smart Reflow Oven Controller
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/breflow_top.png)|
+|!["--"](https://github.com/EMendesS/public/blob/main/img/breflow_top.png)|
 |:--:|
 | *Fig. 1: Top preview* |
 |!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/breflow_btm.png)|
@@ -42,20 +42,57 @@ Dual-MCU system combining STM32F7 real-time control with ESP32 UI/Webserver, des
 *   **Motion Tracking:** [ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
 
 ### 📡 L86T – Micro GNSS Module
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview.jpg)|
+|!["--"](https://github.com/EMendesS/public/blob/main/img/l86t_top.png)|
 |:--:|
 | *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview_bottom.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/l86t_btm.png)|
 | *Fig. 2: Bottom preview* |
 Compact GNSS + sensor fusion platform integrating positioning, altitude, and heading in a minimal footprint for embedded tracking applications.
 
-### ⚡ BLDC Telemetry & Control System
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview.jpg)|
+The **L86T** is a high-precision, ultra-compact positioning and environmental sensing platform. Engineered for embedded navigation, it integrates a multi-constellation GNSS engine with a suite of high-resolution sensors to provide a complete telemetry solution in a minimal footprint.
+
+*   **Core Navigation:** Powered by the **L86-M33 GNSS** module, supporting multi-constellation tracking for high-sensitivity positioning and fast time-to-first-fix (TTFF).
+*   **Main Controller (STM32F103):** A dedicated ARM Cortex-M3 MCU for real-time data processing, sensor fusion, and telemetry management.
+*   **Environmental Sensing:** Integrated **BMP388** barometric pressure sensor for high-resolution altitude tracking and vertical velocity monitoring.
+*   **Orientation & Heading:** Onboard **LIS3MDL** 3-axis magnetometer for precise magnetic heading and orientation data.
+*   **Power Management:** Integrated **BQ25180** battery management system for advanced charging, safety monitoring, and low-power operation.
+*   **Unified Interface:** A single multi-purpose connector provides both **I2C telemetry** and firmware programming, simplifying system integration.
+
+---
+
+### **Engineering References**
+*   **GNSS Module:** [Quectel L86-M33 Series](https://www.quectel.com/product/gnss-l86-module)
+*   **Mainstream MCU:** [STM32F103 Series](https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html)
+*   **Barometric Sensor:** [Bosch BMP388 Pressure Sensor](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
+*   **Magnetometer:** [ST LIS3MDL 3-Axis Magnetometer](https://www.st.com/en/mems-and-sensors/lis3mdl.html)
+*   **Battery Charger:** [TI BQ25180 Management IC](https://www.ti.com/product/BQ25180)
+
+### ⚡ Tupan - BLDC Telemetry & Control System
+|!["--"](https://github.com/EMendesS/public/blob/main/img/tupan_top.png)|
 |:--:|
 | *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview_bottom.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupan_btm.png)|
 | *Fig. 2: Bottom preview* |
 Wide-range (6V–60V) brushless motor controller with LoRa telemetry, dynamic PGA-based sensing, and full 3-phase current/voltage monitoring.
+
+**Tupan** is a high-performance, integrated motor control and telemetry platform designed for wide-voltage operation. Engineered for industrial and robotic propulsion, it combines real-time brushless motor control with long-range RF communication and high-precision power monitoring.
+
+*   **Power Stage (DRV8353):** A robust 60V three-phase smart gate driver controlling three half-bridges, capable of managing high-torque brushless motors from **6V to 60V**.
+*   **Primary Controller (STM32F722):** An ARM Cortex-M7 core executing real-time motor control algorithms, high-speed data acquisition, and safety-critical logic.
+*   **Connectivity & RF:** Integrated **ESP32** for local connectivity and **SX1276 LoRa** for long-range telemetry, enabling remote monitoring in challenging environments.
+*   **Precision Telemetry:** Features a **Dynamic PGA (Programmable Gain Amplifier)** topology to maintain high ADC resolution across the full 60V range, providing accurate **inline 3-phase current and voltage sensing**.
+*   **Acoustic & Motion Sensing:** Integrated **MP34DT05-A** digital MEMS microphone for acoustic diagnostics and an **ICM-42688-P** 6-axis IMU for vibration and orientation tracking.
+*   **System Monitoring:** Dedicated **ADS1015-Q1** precision ADC for continuous monitoring of internal voltage buses and power rail integrity.
+*   **Expansion & I/O:** High-speed **USB-C** interface, onboard **MUX** for port expansion, and a multi-purpose I/O connector for system integration.
+
+---
+
+### **Engineering References**
+*   **Smart Gate Driver:** [TI DRV8353 60V Three-Phase Driver](https://www.ti.com/product/DRV8353)
+*   **LoRa Transceiver:** [Semtech SX1276 Wireless RF](https://www.semtech.com/products/wireless-rf/lora-core/sx1276)
+*   **Precision ADC:** [TI ADS1015-Q1 Monitoring ADC](https://www.ti.com/product/ADS1015-Q1)
+*   **Motion Tracking:** [TDK ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
+*   **MEMS Microphone:** [ST MP34DT05-A Digital Mic](https://www.st.com/en/mems-and-sensors/mp34dt05-a.html)
 
 ## Design Philosophy
 All projects follow a consistent engineering approach:
