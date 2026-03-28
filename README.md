@@ -42,10 +42,10 @@ Dual-MCU system combining STM32F7 real-time control with ESP32 UI/Webserver, des
 *   **Motion Tracking:** [ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
 
 ### 📡 L86T – Micro GNSS Module
-|!["--"](https://github.com/EMendesS/public/blob/main/img/l86t_top.png)|
+|!["--"](https://github.com/EMendesS/public/blob/main/img/L86T_top.png)|
 |:--:|
 | *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/l86t_btm.png)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/L86T_btm.png)|
 | *Fig. 2: Bottom preview* |
 Compact GNSS + sensor fusion platform integrating positioning, altitude, and heading in a minimal footprint for embedded tracking applications.
 
