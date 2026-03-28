@@ -1,6 +1,3 @@
-# public
-Dedicated to show some projects made by me.
-
 # ⚙️ Embedded Systems & Hardware Engineering Portfolio
 
 ## Overview
