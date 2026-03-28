@@ -18,12 +18,28 @@ The focus is on building robust, production-grade systems with clear architectur
 ## Featured Projects
 
 ### 🔥 Breflow – Smart Reflow Oven Controller
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/breflow_top.png)|
 |:--:|
 | *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview_bottom.jpg)|
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/breflow_btm.png)|
 | *Fig. 2: Bottom preview* |
 Dual-MCU system combining STM32F7 real-time control with ESP32 UI/Webserver, designed for precise thermal profiling using thermocouples and PID regulation.
+
+**Breflow** is an experimental-grade embedded control platform engineered for high-accuracy thermal profiling. By utilizing a **dual-processor architecture**, the system achieves a strict separation of concerns: a high-performance MCU handles real-time deterministic control, while a dedicated co-processor manages the user interface and network connectivity.
+
+*   **Primary Controller (STM32F722):** An ARM Cortex-M7 core managing real-time PID control loops, safety-critical thermal monitoring, and high-speed peripheral interfacing.
+*   **Connectivity Co-Processor (ESP32):** A dedicated module functioning as a **TFT Controller** and **Webserver**, providing a responsive graphical interface and remote monitoring via Wi-Fi.
+*   **Thermal Acquisition:** Dual-channel thermocouple interface using high-precision digital converters with integrated cold-junction compensation.
+*   **Analog Front-End:** Integrated **Programmable Gain Amplifier (PGA)** for flexible signal conditioning and enhanced ADC resolution.
+*   **Integrated Debugging:** On-board **ST-Link programmer** for the STM32 and a dedicated programming header for the ESP32, enabling seamless field updates.
+*   **Connectivity:** Modern **USB-C** interface for high-speed data logging and a multi-purpose I2C bus for system scaling.
+
+---
+
+### **Engineering References**
+*   **Main MCU:** [STM32F722 High-Performance Series](https://www.st.com/en/microcontrollers-microprocessors/stm32f722ze.html)
+*   **Thermal Sensing:** [MCP9600 Thermocouple-to-Digital Converter](https://www.microchip.com/en-us/product/MCP9600)
+*   **Motion Tracking:** [ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
 
 ### 📡 L86T – Micro GNSS Module
 |!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupanV4/Board_preview.jpg)|
