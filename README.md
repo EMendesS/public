@@ -20,9 +20,9 @@ The focus is on building robust, production-grade systems with clear architectur
 ### ⚡ Tupan - BLDC Telemetry & Control System
 |!["--"](https://github.com/EMendesS/public/blob/main/img/tupan_top.png)|
 |:--:|
-| *Fig. 1: Top preview* |
+| *Fig. 1: Tupan top preview* |
 |!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupan_btm.png)|
-| *Fig. 2: Bottom preview* |
+| *Fig. 2: Tupan bottom preview* |
 Wide-range (6V–60V) brushless motor controller with LoRa telemetry, dynamic PGA-based sensing, and full 3-phase current/voltage monitoring.
 
 **Tupan** is a high-performance, integrated motor control and telemetry platform designed for wide-voltage operation. Engineered for industrial and robotic propulsion, it combines real-time brushless motor control with long-range RF communication and high-precision power monitoring.
@@ -47,9 +47,9 @@ Wide-range (6V–60V) brushless motor controller with LoRa telemetry, dynamic PG
 ### 🔥 Breflow – Smart Reflow Oven Controller
 |!["--"](https://github.com/EMendesS/public/blob/main/img/breflow_top.png)|
 |:--:|
-| *Fig. 1: Top preview* |
+| *Fig. 3: Breflow top preview* |
 |!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/breflow_btm.png)|
-| *Fig. 2: Bottom preview* |
+| *Fig. 4: Breflow bottom preview* |
 Dual-MCU system combining STM32F7 real-time control with ESP32 UI/Webserver, designed for precise thermal profiling using thermocouples and PID regulation.
 
 **Breflow** is an experimental-grade embedded control platform engineered for high-accuracy thermal profiling. By utilizing a **dual-processor architecture**, the system achieves a strict separation of concerns: a high-performance MCU handles real-time deterministic control, while a dedicated co-processor manages the user interface and network connectivity.
@@ -71,9 +71,9 @@ Dual-MCU system combining STM32F7 real-time control with ESP32 UI/Webserver, des
 ### 📡 L86T – Micro GNSS Module
 |!["--"](https://github.com/EMendesS/public/blob/main/img/L86T_top.png)|
 |:--:|
-| *Fig. 1: Top preview* |
+| *Fig. 5: L86T top preview* |
 |!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/L86T_btm.png)|
-| *Fig. 2: Bottom preview* |
+| *Fig. 6: L86T bottom preview* |
 Compact GNSS + sensor fusion platform integrating positioning, altitude, and heading in a minimal footprint for embedded tracking applications.
 
 The **L86T** is a high-precision, ultra-compact positioning and environmental sensing platform. Engineered for embedded navigation, it integrates a multi-constellation GNSS engine with a suite of high-resolution sensors to provide a complete telemetry solution in a minimal footprint.
