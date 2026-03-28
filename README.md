@@ -17,6 +17,33 @@ The focus is on building robust, production-grade systems with clear architectur
 
 ## Featured Projects
 
+### ⚡ Tupan - BLDC Telemetry & Control System
+|!["--"](https://github.com/EMendesS/public/blob/main/img/tupan_top.png)|
+|:--:|
+| *Fig. 1: Top preview* |
+|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupan_btm.png)|
+| *Fig. 2: Bottom preview* |
+Wide-range (6V–60V) brushless motor controller with LoRa telemetry, dynamic PGA-based sensing, and full 3-phase current/voltage monitoring.
+
+**Tupan** is a high-performance, integrated motor control and telemetry platform designed for wide-voltage operation. Engineered for industrial and robotic propulsion, it combines real-time brushless motor control with long-range RF communication and high-precision power monitoring.
+
+*   **Power Stage (DRV8353):** A robust 60V three-phase smart gate driver controlling three half-bridges, capable of managing high-torque brushless motors from **6V to 60V**.
+*   **Primary Controller (STM32F722):** An ARM Cortex-M7 core executing real-time motor control algorithms, high-speed data acquisition, and safety-critical logic.
+*   **Connectivity & RF:** Integrated **ESP32** for local connectivity and **SX1276 LoRa** for long-range telemetry, enabling remote monitoring in challenging environments.
+*   **Precision Telemetry:** Features a **Dynamic PGA (Programmable Gain Amplifier)** topology to maintain high ADC resolution across the full 60V range, providing accurate **inline 3-phase current and voltage sensing**.
+*   **Acoustic & Motion Sensing:** Integrated **MP34DT05-A** digital MEMS microphone for acoustic diagnostics and an **ICM-42688-P** 6-axis IMU for vibration and orientation tracking.
+*   **System Monitoring:** Dedicated **ADS1015-Q1** precision ADC for continuous monitoring of internal voltage buses and power rail integrity.
+*   **Expansion & I/O:** High-speed **USB-C** interface, onboard **MUX** for port expansion, and a multi-purpose I/O connector for system integration.
+
+---
+
+### **Engineering References**
+*   **Smart Gate Driver:** [TI DRV8353 60V Three-Phase Driver](https://www.ti.com/product/DRV8353)
+*   **LoRa Transceiver:** [Semtech SX1276 Wireless RF](https://www.semtech.com/products/wireless-rf/lora-core/sx1276)
+*   **Precision ADC:** [TI ADS1015-Q1 Monitoring ADC](https://www.ti.com/product/ADS1015-Q1)
+*   **Motion Tracking:** [TDK ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
+*   **MEMS Microphone:** [ST MP34DT05-A Digital Mic](https://www.st.com/en/mems-and-sensors/mp34dt05-a.html)
+
 ### 🔥 Breflow – Smart Reflow Oven Controller
 |!["--"](https://github.com/EMendesS/public/blob/main/img/breflow_top.png)|
 |:--:|
@@ -67,38 +94,11 @@ The **L86T** is a high-precision, ultra-compact positioning and environmental se
 *   **Magnetometer:** [ST LIS3MDL 3-Axis Magnetometer](https://www.st.com/en/mems-and-sensors/lis3mdl.html)
 *   **Battery Charger:** [TI BQ25180 Management IC](https://www.ti.com/product/BQ25180)
 
-### ⚡ Tupan - BLDC Telemetry & Control System
-|!["--"](https://github.com/EMendesS/public/blob/main/img/tupan_top.png)|
-|:--:|
-| *Fig. 1: Top preview* |
-|!["ESP32 Inicialização"](https://github.com/EMendesS/public/blob/main/img/tupan_btm.png)|
-| *Fig. 2: Bottom preview* |
-Wide-range (6V–60V) brushless motor controller with LoRa telemetry, dynamic PGA-based sensing, and full 3-phase current/voltage monitoring.
-
-**Tupan** is a high-performance, integrated motor control and telemetry platform designed for wide-voltage operation. Engineered for industrial and robotic propulsion, it combines real-time brushless motor control with long-range RF communication and high-precision power monitoring.
-
-*   **Power Stage (DRV8353):** A robust 60V three-phase smart gate driver controlling three half-bridges, capable of managing high-torque brushless motors from **6V to 60V**.
-*   **Primary Controller (STM32F722):** An ARM Cortex-M7 core executing real-time motor control algorithms, high-speed data acquisition, and safety-critical logic.
-*   **Connectivity & RF:** Integrated **ESP32** for local connectivity and **SX1276 LoRa** for long-range telemetry, enabling remote monitoring in challenging environments.
-*   **Precision Telemetry:** Features a **Dynamic PGA (Programmable Gain Amplifier)** topology to maintain high ADC resolution across the full 60V range, providing accurate **inline 3-phase current and voltage sensing**.
-*   **Acoustic & Motion Sensing:** Integrated **MP34DT05-A** digital MEMS microphone for acoustic diagnostics and an **ICM-42688-P** 6-axis IMU for vibration and orientation tracking.
-*   **System Monitoring:** Dedicated **ADS1015-Q1** precision ADC for continuous monitoring of internal voltage buses and power rail integrity.
-*   **Expansion & I/O:** High-speed **USB-C** interface, onboard **MUX** for port expansion, and a multi-purpose I/O connector for system integration.
-
----
-
-### **Engineering References**
-*   **Smart Gate Driver:** [TI DRV8353 60V Three-Phase Driver](https://www.ti.com/product/DRV8353)
-*   **LoRa Transceiver:** [Semtech SX1276 Wireless RF](https://www.semtech.com/products/wireless-rf/lora-core/sx1276)
-*   **Precision ADC:** [TI ADS1015-Q1 Monitoring ADC](https://www.ti.com/product/ADS1015-Q1)
-*   **Motion Tracking:** [TDK ICM-42688-P 6-Axis IMU](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/)
-*   **MEMS Microphone:** [ST MP34DT05-A Digital Mic](https://www.st.com/en/mems-and-sensors/mp34dt05-a.html)
-
 ## Design Philosophy
 All projects follow a consistent engineering approach:
 - **Separation of concerns:** Control vs UI vs communication
 - **Deterministic behavior:** Real-time systems remain isolated from non-critical tasks
-- **Scalability:** Modular interfaces (I2C, AUX, expansion headers)
+- **Scalability:** Modular interfaces (SPI, UART, I2C, AUX, expansion headers)
 - **Precision:** Careful analog design to preserve measurement integrity
 - **Full-cycle ownership:** Hardware, firmware, and system validation
 
