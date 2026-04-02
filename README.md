@@ -94,6 +94,33 @@ The **L86T** is a high-precision, ultra-compact positioning and environmental se
 *   **Magnetometer:** [ST LIS3MDL 3-Axis Magnetometer](https://www.st.com/en/mems-and-sensors/lis3mdl.html)
 *   **Battery Charger:** [TI BQ25180 Management IC](https://www.ti.com/product/BQ25180)
 
+### 💧 SmartMeter – Industrial IoT Telemetry & Water Management
+|!["--"](https://github.com/EMendesS/public/blob/main/img/smartmeter_top.png)|
+|:--:|
+| *Fig. 7: SmartMeter top preview* |
+|!["--"](https://github.com/EMendesS/public/blob/main/img/smartmeter_btm.png)|
+| *Fig. 8: SmartMeter bottom preview* |
+Industrial IoT gateway integrating LPWA cellular connectivity with high-precision analog front-ends for hydraulic monitoring, GNSS tracking, and RS-485 interfacing.
+
+The **SmartMeter** is a ruggedized telemetry platform engineered for remote utility management and infrastructure monitoring. It combines multi-constellation positioning with LTE-M/NB-IoT connectivity to digitize hydraulic parameters—specifically flow (hydrometer) and pressure (manometer)—while maintaining compatibility with industrial fieldbuses.
+
+*   **Cellular & Positioning (SARA-R422M8S):** A multi-band LTE-M / NB-IoT module with an integrated u-blox M8 GNSS engine, providing global connectivity and concurrent positioning for distributed assets.
+*   **Main Controller (ESP32-WROOM-32E):** Manages the application layer, TLS/MQTT security stacks, and local wireless commissioning via Wi-Fi and Bluetooth.
+*   **Precision Data Acquisition (ADS1015-Q1):** A 12-bit precision ADC with a Programmable Gain Amplifier (PGA) used to digitize conditioned signals from the hydrometer and manometer with high dynamic range.
+*   **Industrial Interface (ISL3178EIBZ):** A ±15kV ESD protected, full-fail-safe RS-485 transceiver, enabling Modbus communication with legacy industrial hardware.
+*   **Signal Conditioning & Level Shifting:** Integrated **TCA39306DCUR** bidirectional voltage-level translator to bridge the 1.8V SARA-R4 domain with the 3.3V system logic.
+*   **Storage & SIM Interface:** Features a vibration-resistant **NSIM-6-A** SIM connector and a **DM3AT-SF-PEJM5** microSD slot for local data logging and blackbox functionality.
+
+---
+
+### **Engineering References**
+*   **LTE-M/NB-IoT & GNSS:** [u-blox SARA-R422M8S Series](https://www.u-blox.com/en/product/sara-r4-series)
+*   **Main Controller:** [Espressif ESP32-WROOM-32E Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
+*   **Precision ADC:** [TI ADS1015-Q1 Monitoring ADC](https://www.ti.com/product/ADS1015-Q1)
+*   **RS-485 Transceiver:** [Renesas ISL3178E 3.3V RS-485/RS-422](https://www.renesas.com/us/en/products/interface-connectivity/rs-485-rs-422-transceivers/isl3178e-15kv-esd-protected-33v-full-fail-safe-low-power-rs-485rs-422-transceivers)
+*   **Level Translator:** [TI TCA39306 Voltage-Level Shifter](https://www.ti.com/product/TCA39306)
+*   **MicroSD Connector:** [Hirose DM3 Series](https://www.hirose.com/en/product/series/DM3)
+
 ## Design Philosophy
 All projects follow a consistent engineering approach:
 - **Separation of concerns:** Control vs UI vs communication
